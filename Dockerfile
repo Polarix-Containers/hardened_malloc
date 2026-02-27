@@ -1,4 +1,4 @@
-ARG VERSION=2026010800
+ARG VERSION=14
 
 FROM alpine:latest
 
