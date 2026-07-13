@@ -1,4 +1,4 @@
-ARG VERSION=2026070500
+ARG VERSION=2026071100
 
 FROM alpine:latest
 
@@ -11,7 +11,7 @@ ARG VARIANT=default
 WORKDIR /root/hardened_malloc
 
 ADD --keep-git-dir=true https://github.com/GrapheneOS/hardened_malloc.git#${VERSION} .
-    
+
 RUN apk -U upgrade \
     && apk add build-base git gnupg openssh-keygen \
     && rm -rf /var/cache/apk/* \
